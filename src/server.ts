@@ -5,7 +5,7 @@ import { classifyNumber } from './numberClassification';
 
 
 const app = express();
-const PORT =  65531;
+const PORT =  process.env.PORT || 9900;
 
 app.use(cors());
 app.use(express.json());
